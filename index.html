@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orbit Back!</title>
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="light-mode-toggle" id="themeSwitch"> 
+        <img src="moon-boiled.png" id="pic" alt="toggle light mode" style="width: 50px; height: 50px; object-fit: cover;"> 
+        <p style="font-size: 10px; color: var(--subText);" id="modeStatus">Dark</p> 
+    </div>
+    <div class="music-toggle" id="musicSwitch"> 
+        <img src="musicoff.png" id="music-pic" alt="toggle music" style="width: 50px; height: 50px; object-fit: cover;"> 
+        <p style="font-size: 10px; color: var(--subText);" id="musicStatus">Off</p>
+    </div>
+    <div class="border" id="border-top"> </div>
+    <div style="position: fixed; top: 55%; left: 50%; transform: translate(-50%, -50%); z-index: 1000;"> <img src="center-pic/about-me-boiled.png" alt="center picture" id="center-pic" style="width: 150px; height: 150px;"> </div>
+    <div class="grandparent">
+        <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100px; gap: 5px;">
+            <p class="this-is-marq">hello! this is <span style="font-weight: bold; color: var(--accent)">marq:]</span></p>
+            <p style="margin: 0; color: var(--accent)">front-end developer</p>
+        </div>
+
+        <div id="darken"> </div>
+
+        <div class="panel" id="about-me">
+            <div class="panel-header" id="aboutme-header"> 
+                <div class="panel-title"> About Me! </div>
+                <div class="close-button" onclick="hide('about-me');"> 
+                    <img src="close.png" alt="close" style="width: 25px; height: 25px;"> 
+                </div>
+            </div>
+            <div class="panel-content" id="aboutme-content">
+                <div class="header">
+                    <img src="pfp.jpg" alt="profile picture" id="pfp">
+                    <p style="color: var(--accent); font-size: 15px; font-weight: bold; text-align: center;">
+                        Marq Gahit 마크 <br> 
+                        <span style="font-size: 12px; color: white; font-weight: normal;">
+                            BS Computer Science (Manifesting!)</span>
+                    </p>
+                </div>
+                <br>
+                Hello! My name is Marq, I'm a 16 year old student from the Philippines! I'm currently a senior high school student, and I plan to pursue a degree in Computer Science in the future! <br>
+                <p style="font-size: 25px; font-weight: bold;"> Hobbies: </p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div class="pill"> Coding </div>
+                    <div class="pill"> Art </div>
+                    <div class="pill"> Music </div>
+                    <div class="pill"> Piano</div>
+                    <div class="pill"> Archery </div>
+                </div>
+                <p style="font-size: 25px; font-weight: bold;"> Likes: </p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div class="pill"> Coffee</div>
+                    <div class="pill"> Gong Cha </div>
+                    <div class="pill"> Don Macchiatos </div>
+                    <div class="pill"> Animal Crossing </div>
+                    <div class="pill"> Stardew Valley </div>
+                    <div class="pill"> Smash Bros. </div>
+                    <div class="pill"> Minecraft </div>
+                    <div class="pill"> K-Pop </div>
+                    <div class="pill"> VOCALOID </div>
+                </div>
+                <p style="font-size: 25px; font-weight: bold;">Language Proficiency:</p>
+                <div style="display: flex; gap: 10px; flex-wrap: wrap;">
+                    <div class="pill">English -  <span style="color:var(--accent)"> Native </span></div>
+                    <div class="pill">Filipino - <span style="color:var(--accent)"> Native </span></div>
+                    <div class="pill">Cebuano -  <span style="color:var(--accent)"> Native </span></div>
+                    <div class="pill">Korean -   Conversational </span></div>
+                    <div class="pill">French -   Beginner </span></div>
+                    <p> <br> </p>
+                </div>
+                Although I'm not really the best at anything, I always work hard and keep striving !! I can always try to be a really good friend and colleague!
+            </div>
+        </div>
+
+        <div class="panel" id="education">
+            <div class="panel-title"> Education </div>
+            <div class="close-button" onclick="hide('education')">
+                <img src="close.png" alt="close" style="width: 25px; height: 25px;">
+            </div>
+            <p class="panel-content">
+                <span style="font-size: 20px; font-weight: bold;"> TVL-ICT (Information & Communications Technology) Strand </span>
+                Senior High School Graduate, 2026 <br>
+                <span style="font-size: 12px; color: var(--accent)"> With High Honors</span>
+                <br>
+                <span style="font-size: 20px; font-weight: bold;"> TESDA NCII Computer Systems Servicing </span>
+                <span style="color: var(--accent); font-size: 12px;"> National Certificate II Holder, 2026 </span>
+                <br>
+                <span style="font-size: 20px; font-weight: bold;"> Work Immersion (Tech Support, Finance Dept.) </span>
+                <span style="color: var(--accent); font-size: 12px;"> Work Immersion Awardee, 2026 </span>
+                <br>
+                <span style="font-size: 20px; font-weight: bold;"> SSLG Publicity Committee Editor </span>
+                <span style="color: var(--accent); font-size: 12px;"> Service Awardee, 2026 </span>
+            </p>
+        </div>
+
+        <div class="panel" id="socials">
+            <div class="panel-title"> Socials </div>
+            <div class="close-button" onclick="hide('socials')">
+                <img src="close.png" alt="close" style="width: 25px; height: 25px;">
+            </div>
+            <div class="panel-content">
+                <br>
+                <div style="border: 1px var(--border2) solid; display: flex; flex-direction: column; align-items: center; margin-left: auto; margin-right: auto; justify-content: center; padding: 10px; border-radius: 10px; width: 50%;">
+                    <span style="text-align: center;"> email me at: </span>
+                    <span style="font-size: 17px; font-weight: bold; text-align: center;"> ashplod@gmail.com </span>
+                </div>
+                <br>
+                <span style="font-size: 20px; font-weight: bold;"> My Socials: </span>
+                <div style="width: 100%; height: fit-content; display: flex; align-items: center; justify-content: center; gap: 20px; border-radius: 10px;">
+                    <a href="https://www.facebook.com/marq.gahit/" target="_blank">
+                        <div class="socmed fb" onclick></div>
+                    </a>
+                    <a href="https://www.instagram.com/i.cook.cream.soup" target="_blank">
+                        <div class="socmed ig"></div>
+                    </a>
+                    <a href="https://github.com/milkeotothemoon" target="_blank">
+                        <div class="socmed gh"></div>
+                    </a>
+                </div>
+                <span style="font-size: 20px; font-weight: bold;"> Add Me! </span>
+                <div style="display: grid; grid-template-columns: 1fr 1fr; padding: 10px; gap: 5px 15px; margin-top: 4px;">
+                    <div style="display: flex; flex-direction: column;">
+                        <span style="font-size: 17px;"> SW-2292-3819-4212 </span>
+                        <span style="font-size: 10px; color: var(--subText);"> Nintendo Switch </span>
+                        <span style="font-size: 17px;"> MIYEON </span>
+                        <span style="font-size: 10px; color: var(--subText);"> Steam </span>
+                    </div>
+                    <div style="display: flex; flex-direction: column; justify-content: center; text-align: right;">
+                        <span style="font-size: 17px;"> luckyegg4733 </span>
+                        <span style="font-size: 10px; color: var(--subText);"> Minecraft </span>
+                        <span style="font-size: 17px;"> AnyoneHateMK8PGP </span>
+                        <span style="font-size: 10px; color: var(--subText);"> Roblox </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="portfolio">
+            <div class="panel-header" id="portfolio-header"> 
+                <div class="panel-title"> Portfolio </div>
+                <div class="close-button" onclick="hide('portfolio')">
+                    <img src="close.png" alt="close" style="width: 25px; height: 25px;">
+                </div>
+            </div>
+            <div class="panel-content" id="portfolio-content" style="text-align: justify;">
+                I'm still in the process of building my portfolio, but here are some of the things I do for fun!
+                <span style="color: var(--subText); font-size: 12px;"> (Sidenote: I'm not a professional at any of these, I'm just a hobbyist who loves to learn new things and create stuff!^^') </span>
+                <br>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <span style="font-weight: bold; font-size: 20px;"> Development: </span> 
+
+                    <div class="pill" style="margin-left: 14px;"> HTML+CSS | JavaScript </div>
+                    <div style="width: 90%; height: fit-content; margin-left: 40px; display: grid; grid-template-columns: repeat(2, 300px); gap: 10px; padding-bottom: 10px;">
+                        <div class="portfolio-item"> <img src="portfolio/website1.png" style="width: 100%; height: 145px; justify-self: center;"> orbit back! v1 </div>
+                        <div class="portfolio-item"> <img src="portfolio/website2.png" style="width: 100%; height: 145px; justify-self: center;"> Group 3 - LOVELACE Thesis: G12LMO</div>
+                        <div class="portfolio-item"> <img src="portfolio/website3.png" style="width: 100%; height: 145px; justify-self: center;"> DDLC webdev practice </div>
+                        <div class="portfolio-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;"> check out my (kinda empty) github! </div>
+                    </div>
+                    <div class="pill" style="margin-left: 14px;"> Java </div>
+                    <div style="width: 90%; height: fit-content; margin-left: 40px; display: grid; grid-template-columns: repeat(2, 300px); gap: 10px; padding-bottom: 10px;">
+                        <div class="portfolio-item"> <img src="portfolio/game1.gif" style="width: 300px; height: 180px; justify-self: center;"> Super Smash Clash by Marq, Dave, Alleya, Theresa </div>
+                        <div class="portfolio-item"> <img src="portfolio/game2.gif" style="width: 300px; height: 180px; justify-self: center;"> If Only by Austin, Marq, James</div>
+                        <div class="portfolio-item"> <img src="portfolio/game3.gif" style="width: 300px; height: 180px; justify-self: center;"> Pokemon Vanguard by Marq, Dave, Thea</div>
+                        <div class="portfolio-item" style="display: flex; flex-direction: column; align-items: center;"> <img src="portfolio/game4.gif" style="width: 180px; height: 180px; justify-self: center;"> Brain Age by Marq, Clint, Gia</div>
+                    </div>
+                    <div class="pill" style="margin-left: 14px;"> C# </div>
+                    <p style="color: var(--subText); margin-left: 20px;"> old school projects that i lost so i cant show anything:| </p>
+                </div>
+                <br>
+                <div style="display: flex; flex-direction: column; gap: 10px;">
+                    <span style="font-weight: bold; font-size: 20px;"> Tools: </span> 
+                    <div class="pill" style="margin-left: 14px;"> SynthV | Audacity </div>
+                    <!-- https://youtu.be/GtSUURTFNys -->
+                    <div style="width: 100%; max-width: 300px; aspect-ratio: 16 / 9; margin-left: 14px;">
+                        <iframe
+                            src="https://www.youtube.com/embed/GtSUURTFNys?controls=0&modestbranding=1&rel=0&showinfo=0&autoplay=1&loop=1&showinfo=0"
+                            style="width: 100%; height: 100%; border: none;">
+                        </iframe>
+                    </div>
+                    <div class="pill" style="margin-left: 14px;"> IbisPaint </div>
+                    <p style="margin-left: 14px; color: var(--subText);"> im not very good at art </p>
+                    <div style="width: 90%; height: fit-content; margin-left: 40px; display: grid; grid-template-columns: repeat(2, 300px); gap: 10px; padding-bottom: 10px;">
+                        <div class="portfolio-item"> <img src="portfolio/art1.png" style="width: 200px; height: 200px; justify-self: center;"> </div>
+                        <div class="portfolio-item"> <img src="portfolio/art2.png" style="width: 200px; height: 200px; justify-self: center;"> </div>
+                        <div class="portfolio-item"> <img src="portfolio/art3.png" style="width: 200px; height: 200px; justify-self: center;"> </div>
+                        <div class="portfolio-item"> <img src="portfolio/art4.png" style="width: 200px; height: 200px; justify-self: center;"> </div>
+                        <div class="portfolio-item"> <img src="portfolio/art5.png" style="width: 200px; height: 200px; justify-self: center;"> </div>
+                        <div class="portfolio-item"> <img src="portfolio/art6.png" style="width: 200px; height: 200px; justify-self: center;"> </div>
+                    </div>
+                    <div class="pill" style="margin-left: 14px;"> Blender </div>
+                    <div style="width: 90%; height: fit-content; margin-left: 40px; display: grid; grid-template-columns: repeat(2, 300px); gap: 10px; padding-bottom: 10px;">
+                        <div class="portfolio-item"> <img src="portfolio/blender1.png" style="width: 100%; height: 165px; justify-self: center;"> stateside </div>
+                        <div class="portfolio-item" style="display: flex; flex-direction: column; align-items: center; justify-content: center;"> im still learning blender, actually my first time:] </div>
+                    </div>
+                    <div class="pill" style="margin-left: 14px;"> Canva | Photoshop </div>
+                    <p style="margin-left: 14px; color: var(--subText);"> nah </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="panel" id="credits">
+            <div class="panel-header" id="credits-header"> 
+                <div class="panel-title"> Credits !!! </div>
+                <div class="close-button" onclick="hide('credits')">
+                    <img src="close.png" alt="close" style="width: 25px; height: 25px;">
+                </div>
+            </div>
+            <p class="panel-content" id="credits-content" style="gap:18px;">
+                <span style="font-size: 20px; font-weight: bold; color: var(--accent)"> Art </span>
+                All art done by me!
+                <br>
+
+                <span style="font-size: 20px; font-weight: bold; color: var(--accent)"> Music </span>
+                Background Music: Gate (Pokemon X & Y) by Junichi Masuda and Hitomi Sato <br>
+                <a href="https://sounds.spriters-resource.com/nintendo_switch/supersmashbrosultimate/" style="color: var(--mainText)" target="_blank">Sound Effects by thesounds.spritersresources</a>
+                Copyright: © 2026 Nintendo. All rights reserved.
+                <br>
+
+                <span style="font-size: 20px; font-weight: bold; color: var(--accent)"> Resources </span>
+                <a href="https://www.youtube.com/watch?v=tfp38pBc8BQ" style="color: var(--mainText)"target="_blank">Moving Background by Daniel Bark </a>
+                <a href="https://fonts.google.com/icons" style="color: var(--mainText)" target="_blank">Google Icons</a>
+
+                <span style="font-size: 20px; font-weight: bold; color: var(--accent)"> Inspiration </span>
+                <a href="https://www.youtube.com/watch?v=_tWh4cYCTv0&t=382s&pp=ygUMc2hhciB3ZWJzaXRl" style="color: var(--mainText)" target="_blank">Shar's Desktop by Shar Yap!!</a>
+
+                <span style="font-size: 20px; font-weight: bold; color: var(--accent)"> Tutorials </span>
+                <a href="https://www.youtube.com/watch?v=7D9DSJp5rkY" style="color: var(--mainText)" target="_blank">Animating Entry and Exit Animations by Joy of Code </a>
+                <a href="https://www.w3schools.com/" style="color: var(--mainText)" target="_blank">W3Schools for a refresher of general HTML, CSS, and JavaScript</a>
+                <a href="https://www.youtube.com/watch?v=_tWh4cYCTv0&t=382s&pp=ygUMc2hhciB3ZWJzaXRl" style="color: var(--mainText)" target="_blank">Easy Dark Mode Toggle by Coding2GO</a>
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-stroke" style="color: var(--mainText)" target="_blank">Webkit Text Stroke by Mozilla Developer Network</a>
+                <br>
+
+                and to all my family, friends, and teachers who have supported me and encouraged me to pursue my passions!! I really appreciate you all so much and I hope to make you proud with all the things I'll accomplish in the future!! (˶ᵔ ᵕ ᵔ˶)
+            </p>
+        </div>
+
+        <div class="panel" id="warning">
+            <div class="panel-header" id="warning-header"> 
+                <div class="panel-title"> !! </div>
+                <div class="close-button" onclick="hide('warning')">
+                    <img src="close.png" alt="close" style="width: 25px; height: 25px;">
+                </div>
+            </div>
+            <p class="panel-content" id="warning-content" style="gap:18px;">
+                I see youre on a phone! This website is best viewed on desktop, so some things might look a little weird on mobile. If you can, please check it out on a desktop for the best experience!! ^^
+            </p>
+        </div>
+
+        <div class="parent">
+            <div class="panel-button" onclick="show('about-me')" id="aboutme-button">
+                <div class="aboutme-icon"></div>
+                <p>About Me</p>
+            </div>
+            <div class="panel-button" onclick="show('education')" id="education-button">
+                <div class="education-icon"></div>
+                <p>Education</p>
+            </div>
+            <div class="panel-button" onclick="show('socials')" id="socials-button">
+                <div class="socials-icon"></div>
+                <p>Socials</p>
+            </div>
+            <div class="panel-button" onclick="show('portfolio')" id="portfolio-button">
+                <div class="portfolio-icon"></div>
+                <p>Portfolio</p>
+            </div>
+        </div>
+        <p style="font-size: 12px; color: var(--accent)" id="quote">i can even turn my tears into jewels.</p>
+    </div>
+    <p style="position: fixed; z-index: 50; bottom: 0px; right: 10px; font-size: 15px; color: white; cursor: pointer" onclick="show('credits')"> <u> Credits </u> </p>
+    <div class="border" id="border-bottom" > </div>
+    
+    <script src="script.js" defer></script>
+</body>
+</html>
