@@ -121,6 +121,18 @@ body {
   line-height: 0.7;
 }
 
+#center-pic {
+  width: 150px;
+  height: 150px;
+
+  position: absolute;
+  top: 135px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  z-index: 1;
+}
+
 .grandparent {
   background-color: var(--grandparent);
   display: flex;
@@ -542,6 +554,10 @@ body {
     margin: 20px 0 0; 
     text-align: center;
     line-height: 1.1;
+  }
+
+  #center-pic {
+    top: 120px;
   }
 
   .grandparent {
