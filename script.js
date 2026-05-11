@@ -107,10 +107,10 @@ async function loadSound(url) {
   return await audioCtx.decodeAudioData(arrayBuffer);
 }
 
-loadSound('background.mp3').then(data => bgMusicBuffer = data);
-loadSound('hover.wav').then(data => hoverBuffer = data);
-loadSound('click.wav').then(data => clickBuffer = data);
-loadSound('close.wav').then(data => closeBuffer = data);
+loadSound('audio/background.mp3').then(data => bgMusicBuffer = data);
+loadSound('audio/hover.wav').then(data => hoverBuffer = data);
+loadSound('audio/click.wav').then(data => clickBuffer = data);
+loadSound('audio/close.wav').then(data => closeBuffer = data);
 
 function playSound(buffer) {
   if (!buffer) return; 
