@@ -333,6 +333,11 @@ body {
   box-shadow: var(--shadow); 
 }
 
+.aboutme-section-title {
+  font-size: 25px; 
+  font-weight: bold;
+}
+
 .pill {
   cursor: default;
   border: 2px solid var(--accent);
@@ -543,7 +548,7 @@ body {
   animation: fadeOut 0.2s forwards;
 }
 
-/* MOBILE ----------------------------------------------------------------------------------*/
+/* MOBILE ---------------------------------------------------------------------------------- */
 
 @media (max-width: 768px) {
   html,
