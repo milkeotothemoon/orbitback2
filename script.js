@@ -66,6 +66,10 @@ hvrPortfolio.addEventListener("mouseover", () => {
 
 const aboutmeContent = document.getElementById('aboutme-content');
 const aboutmeHeader = document.getElementById('aboutme-header');
+const educationContent = document.getElementById('education-content');
+const educationHeader = document.getElementById('education-header');
+const socialsContent = document.getElementById('socials-content');
+const socialsHeader = document.getElementById('socials-header');
 const portfolioContent = document.getElementById('portfolio-content');
 const portfolioHeader = document.getElementById('portfolio-header');
 const creditsContent = document.getElementById('credits-content');
@@ -76,6 +80,20 @@ aboutmeContent.addEventListener('scroll', () => {
     aboutmeHeader.classList.add('header-shadow');
   } else {
     aboutmeHeader.classList.remove('header-shadow');
+  }
+});
+educationContent.addEventListener('scroll', () => {
+  if (educationContent.scrollTop > 5) {
+    educationHeader.classList.add('header-shadow');
+  } else {
+    educationHeader.classList.remove('header-shadow');
+  }
+});
+socialsContent.addEventListener('scroll', () => {
+  if (socialsContent.scrollTop > 5) {
+    socialsHeader.classList.add('header-shadow');
+  } else {
+    socialsHeader.classList.remove('header-shadow');
   }
 });
 portfolioContent.addEventListener('scroll', () => {
